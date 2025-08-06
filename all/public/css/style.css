@@ -1,0 +1,161 @@
+/* =========================================
+   New List-Style Dark Mode Design
+   ========================================= */
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2d2d;
+    color: #f0f0f0;
+    margin: 0;
+    padding: auto; /* Padding on all sides */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+a {
+    color: #a972ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Post Item Layout - For All Devices */
+.post-item {
+    display: flex;
+    align-items: center;
+    background: #4a4a4a;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    padding: 0 0 01px;
+    transition: background-color 0.3s ease;
+}
+
+.post-item:hover {
+    background-color: #5a5a5a;
+}
+
+/* Thumbnail Styles - 50x50 and Circular */
+.post-thumbnail img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px soild #C000FF; /* Makes the thumbnail circular */
+    margin-right: 15px;
+    background-color: #5f5f5f;
+}
+
+/* Post Content Styles */
+.post-content {
+    : 1;
+}
+
+.post-content h2 {
+    margin: 0 0 5px; /* Reduced bottom margin */
+    font-size: 1em; /* Adjusted font size for balance */
+}
+.post-content h2 a {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 15px;
+}
+
+.post-meta {
+    font-size: 0.8em;
+    color: #bbbbbb;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.post-meta .post-date {
+    font-weight: bold;
+    align-items:left;
+}
+
+/* Snippet Style */
+.post-snippet {
+    font-size: 0.9em;
+    color: #bbbbbb;
+    margin: 0 0 8px 0;
+    line-height: 1.4; /* লাইনগুলোর মধ্যে স্বাভাবিক দূরত্ব */
+
+    /* এই কোড কন্টেন্টকে ২ লাইনে সীমাবদ্ধ রাখবে */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* =========================================
+   Responsive Styles (for Mobile Devices)
+   ========================================= */
+
+@media (max-width: 600px) {
+    /* On mobile, we only need to adjust typography slightly */
+    /* The layout remains the same */
+    
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .post-content h2 {
+        font-size: 1em;
+    }
+
+    .post-meta {
+        font-size: 0.75em;
+    }
+}
+.post-thumbnail img {
+    width: 70px;
+    height: 70px;
+    border: 2px soild #C000FF; /* Makes the thumbnail circ>
+    margin-right: 15px;
+    background-color: #5f5f5f;
+}
+.table-style {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+}
+.table-style tr {
+  transition: background 0.2s ease;
+}
+.table-style tr:hover {
+  background: #f0f0f0;
+}
+.table-style td {
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+.table-style img {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+}
+.table-style .filename a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+.table-style .filename a:hover {
+  text-decoration: underline;
+}
+.table-style .filesize {
+  color: magenta;
+  font-size: 0.9em;
+}
+.post-date {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #888;
+}
